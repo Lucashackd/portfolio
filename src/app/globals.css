@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+.font-iceberg {
+  font-family: var(--font-iceberg), monospace;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
 :root {
   --color-green-blue: linear-gradient(to right, #8df4b4, #18dada);
 }
@@ -14,6 +22,20 @@ body {
     62.5px 31.25px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 28px;
+  user-select: none;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
 .glass-effect {
   background-color: rgba(255, 255, 255, 0.12);
   box-shadow:
@@ -23,7 +45,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(to bottom right, #8df4b4, #18dada);
+  background: linear-gradient(to bottom right, #b9ff17, #ee9d40);
   background-clip: text;
   text-decoration: transparent;
   -webkit-background-clip: text;
@@ -32,14 +54,3 @@ body {
   -moz-text-fill-color: transparent;
   -webkit-text-stroke: 0.5px #47168c;
 }
-
-nav {
-  height: 80px;
-  width: 100%;
-  padding: 16px;
-  margin-top: 16px;
-  border-radius: 28px;
-  user-select: none;
-}
-
-/*TODO: Criar uma variável para os efeitos glass a serem aplicados em demais sessões do código */
