@@ -1,11 +1,45 @@
 @import "tailwindcss";
 
+:root {
+  --color-green-blue: linear-gradient(to right, #8df4b4, #18dada);
+}
+
 body {
   background-color: #7b26f2;
   background-image: url(/images/bg-frame.svg), url(/images/bg-frame.svg);
-  background-size: 62.5px;
+  background-size: 125px;
   background-repeat: repeat;
   background-position:
-    0,
-    31.25px 15.625px;
+    0 0,
+    62.5px 31.25px;
 }
+
+.glass-effect {
+  background-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    inset -1px -1px 4px rgba(94, 94, 94, 0.5),
+    inset 1px 1px 4px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.text-gradient {
+  background: linear-gradient(to bottom right, #8df4b4, #18dada);
+  background-clip: text;
+  text-decoration: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px #47168c;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 28px;
+  user-select: none;
+}
+
+/*TODO: Criar uma variável para os efeitos glass a serem aplicados em demais sessões do código */
